@@ -1,10 +1,22 @@
-# mount point	fstype    device    	[device2]
+# mount point	fstype		device		option
 
-/boot       mtd         boot
-/cache      yaffs2      cache
-/data       yaffs2      userdata
-/misc       mtd         misc
-/recovery   mtd         recovery
-/sdcard     vfat        /dev/block/mmcblk0p1        /dev/block/mmcblk0
-/system     yaffs2      system
-/sd-ext     ext4        /dev/block/mmcblk0p2
+/system				ext4		/dev/block/platform/sdhci.1/by-name/system
+/data				ext4		/dev/block/platform/sdhci.1/by-name/userdata		length=-16384
+/cache				ext4		/dev/block/platform/sdhci.1/by-name/cache
+/misc				emmc		/dev/block/platform/sdhci.1/by-name/misc
+/boot				emmc		/dev/block/platform/sdhci.1/by-name/boot
+/u-boot				emmc		/dev/block/platform/sdhci.1/by-name/u-boot
+/ubootlogo			emmc		/dev/block/platform/sdhci.1/by-name/ubootlogo
+/dt-blob			emmc		/dev/block/platform/sdhci.1/by-name/dt-blob
+/cp-boot			emmc		/dev/block/platform/sdhci.1/by-name/cp-boot
+/cp-image			emmc		/dev/block/platform/sdhci.1/by-name/cp-image
+/dsp-dram			emmc		/dev/block/platform/sdhci.1/by-name/dsp-dram
+/dsp-pram			emmc		/dev/block/platform/sdhci.1/by-name/dsp-pram
+/sys-parm-ind		emmc		/dev/block/platform/sdhci.1/by-name/sys-parm-ind
+/parm-spml-ind		emmc		/dev/block/platform/sdhci.1/by-name/parm-spml-ind
+/kernel-dtb	emmc				/dev/block/platform/sdhci.1/by-name/kernel-dtb
+/sdcard				vfat		/dev/block/mmcblk1    /dev/block/mmcblk1p1
+/emmc				vfat	    /dev/block/mmcblk1p1  /dev/block/platform/sdhci.1/by-name/sdcard
+/internal_sd		vfat	    /dev/block/mmcblk1p1  /dev/block/platform/sdhci.1/by-name/sdcard
+#sdcard2			vfat		/dev/block/platform/sdhci.1/by-name/sdcard
+/sdcard 			auto 		/devices/platform/sdhci.0/mmc_host/mmc2

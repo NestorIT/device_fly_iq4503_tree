@@ -1,0 +1,94 @@
+#Sample variables file for BCM94330 SD FC AGB board
+manfid=0x2d0
+prodid=0x0547
+vendid=0x14e4
+devid=0x4360
+boardtype=0x05e1
+boardrev=0x1104
+boardflags=0x0080201
+nocrc=1
+xtalfreq=26000
+boardnum=22
+macaddr=00:90:4c:c5:12:38
+ag0=255
+aa2g=1
+ccode=ALL
+pa0itssit=0x20
+pa0b0=5367
+pa0b1=-633
+pa0b2=-158
+rssismf2g=0xa
+rssismc2g=0x3
+rssisav2g=0x7
+#rssi params for 5GHz
+rssismf5g=0x4
+rssismc5g=0x3
+rssisav5g=0x7
+#PA parameters for lower a-band
+pa1lob0=0x14BE
+pa1lob1=0xFD7F
+pa1lob2=0xFF55
+#PA parameters for midband
+pa1b0=0x14A2
+pa1b1=0xFD8E
+pa1b2=0xFF64
+#PA parameters for high band
+pa1hib0=0x148E
+pa1hib1=0xFDA0
+pa1hib2=0xFF72
+rxpo5g=0
+maxp2ga0=0x4c
+maxp5ga0=0x4c
+maxp5gla0=0x4c
+maxp5gha0=0x4c
+# 2.4G Tx Power offsets
+ofdm2gpo=0x66666666
+mcs2gpo0=0x8888
+mcs2gpo1=0x8888
+# 5G Tx Power offsets
+ofdm5gpo=0x44444444
+ofdm5glpo=0x44444444
+ofdm5ghpo=0x44444444
+mcs5gpo0=0x6666
+mcs5gpo1=0x6666
+mcs5glpo0=0x6666
+mcs5glpo1=0x6666
+mcs5ghpo0=0x6666
+mcs5ghpo1=0x6666
+sromrev=3
+il0macaddr=00:90:4c:c5:12:38
+wl0id=0x431b
+cckPwrOffset=4
+swctrlmap_2g=0x44844484,0x42824282,0x40804484,0x18282,0x1ff
+noise_cal_po_5g=5,1,2
+triso5g=0
+swctrlmap_5g=0x00100010,0x20202020,0x20202020,0x14202,0x0f0
+#swctrlmap_5g=0x80808080,0x40404040,0x20202020,0x14202,0x0f0
+#swctrlmap_5g=0x40404040,0x80808080,0x20202020,0x14202,0x0f0
+#swctrlmap_5g=0x08080808,0x40404040,0x40404040,0x14202,0x048
+rfreg033=0x19
+rfreg033_cck=0x1f
+dacrate2g=160
+txalpfbyp2g=1
+bphyscale=17
+cckPwrIdxCorr=-15
+pacalidx2g=50
+pacalidx5g=20
+noise_cal_enable_2g=0
+noise_cal_enable_5g=0
+
+sd_gpout=0
+sd_oobonly=1
+sd_gpval=1
+
+#for BT-coexistence
+btc_params1=25000
+btc_params6=10
+btc_params8=25000
+btc_params10=15000
+btc_params16=20000
+btc_params68=100
+btc_params70=1500
+btc_params80=0
+btc_params106=4500
+btc_params107=6000
